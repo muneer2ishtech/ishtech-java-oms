@@ -20,6 +20,12 @@
 	<name>ishtech-java-oms</name>
 	<description>Order Management system using Spring Boot Rest APIs</description>
 
+	<licenses>
+		<license>
+			<name>BSD-2-Clause</name>
+		</license>
+	</licenses>
+
 	<developers>
 		<developer>
 			<name>Muneer Ahmed Syed</name>
