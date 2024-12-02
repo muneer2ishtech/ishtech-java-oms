@@ -1,4 +1,4 @@
-# ishtech-java-oms
+# spring-boot-oms
 Order Management system using Spring Boot Rest APIs
 
 ## Run without build
