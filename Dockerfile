@@ -5,8 +5,8 @@ ARG SERVER_PORT=8080
 
 ENV TZ=Europe/Helsinki
 
-COPY target/ishtech-java-oms-${APP_VERSION}.jar ishtech-java-oms.jar
+COPY target/spring-boot-oms-${APP_VERSION}.jar spring-boot-oms.jar
 
 EXPOSE ${SERVER_PORT}
 
-ENTRYPOINT ["java", "-jar", "/ishtech-java-oms.jar"]
+ENTRYPOINT ["java", "-jar", "/spring-boot-oms.jar"]

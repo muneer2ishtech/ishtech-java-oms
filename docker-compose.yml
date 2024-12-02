@@ -19,7 +19,7 @@ services:
       start_period: 30s
 
   ishtech-oms-springboot:
-    image: muneer2ishtech/ishtech-java-oms:latest
+    image: muneer2ishtech/spring-boot-oms:latest
     container_name: ishtech_oms_springboot_container
     environment:
       SPRING_DATASOURCE_URL: jdbc:mariadb://ishtech-oms-mariadb:3306/ishtech_oms_dev_db

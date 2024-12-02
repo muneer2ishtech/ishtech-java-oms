@@ -29,8 +29,8 @@ public class HomeController {
 	@Value("${spring.profiles.active:#{null}}")
 	private String activeProfile;
 
-	@Value("${server.port:}")
-	private String serverPort;
+	@Value("${spring.datasource.name:}")
+	private String ds;
 
 	@GetMapping(path = "/")
 	public String index() {
@@ -46,7 +46,7 @@ public class HomeController {
 
 		results.put("applicationName", appName);
 		results.put("activeProfile", activeProfile);
-		results.put("serverPort", serverPort.toString());
+		results.put("datasource", ds);
 
 		Manifest manifest = new Manifest(OmsApplication.class.getResourceAsStream("/META-INF/MANIFEST.MF"));
 		String version = (String) manifest.getMainAttributes().get(Attributes.Name.IMPLEMENTATION_VERSION);
